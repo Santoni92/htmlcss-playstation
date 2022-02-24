@@ -1,0 +1,42 @@
+/*generics*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*utilities*/
+
+header,
+section {
+  min-height: 200px;
+}
+
+[class*="col"]
+{
+    border:1px dashed red;
+}
+/*content*/
+
+#playstation-plus #nascosto{
+    display:none;
+}
+
+#playstation-now #nascosto{
+    display: none;
+}
+
+@media screen and (min-width:768px)
+{
+    #playstation-plus #nascosto{
+        display:inline-block;
+    }
+
+    #playstation-now #nascosto{
+        display: inline-block;
+    }
+}
