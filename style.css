@@ -1,4 +1,4 @@
-/*generics*/
+/*********************************************generics*********************************************/
 *{
     margin:0;
     padding:0;
@@ -9,27 +9,95 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*utilities*/
+/**********************************************utilities********************************************/
 
 header,
 section {
-  min-height: 200px;
+    min-height: 200px;
 }
 
 [class*="col"]
 {
     border:1px dashed red;
 }
-/*content*/
+
+.btn{   /*sovrascrivo la classe .btn di bootstrap per modificare queste proprietà a mio gusto*/
+    border-radius:50px;
+    padding:0px 20px;
+}
+/**********************************************content************************************************/
+/********************header******************/
+#brand-name{
+    background-color: #000000;
+    color:white;
+}
+
+.fa-solid{
+    line-height:50px;   /*sovrascritta la proprietà 'line-height' della classe 'fa-solid' del tag i*/
+    vertical-align: middle;
+}
+
+#logo-nav #nascosto{
+    display:none;
+}
+
+#logo-nav #nascosto ul{
+    list-style-type: none;
+}
+
+#logo-nav ul{   /*così da avere link ed icone allineati sulla linea di testo*/
+    vertical-align: middle;
+    line-height:50px;
+}
+
+#logo-nav #nascosto ul li{
+    margin:0px 10px;
+}
+
+#logo-nav #nascosto ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+.dropdown .dropdown-menu{
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: inline-block;
+}
+/****************sez-jumbotron***************/
+#jumbotron .row{
+    position:relative;  /*gli do l'ancoraggio*/
+}
+
+.content{   /*per posizionare titolo,paragrafo e button in quella determinata posizione sulla immagine*/
+    position:absolute;
+    bottom:185px;
+}
+
+#jumbotron img{
+    width:100%; /*gli dico di occupare in larghezza il 100% del suo contenitore*/
+}
+
+#jumbotron .content .col-12{
+    padding-left:30px;  /*sposto nella posizione voluta il titolo, paragrafo ed button*/
+}
+/************sez-playstation-plus************/
 
 #playstation-plus #nascosto{
     display:none;
 }
-
+/************sez-playstation-now************/
 #playstation-now #nascosto{
     display: none;
 }
 
+
+footer ul {
+    list-style-type: none;
+}
+/*media query*/
 @media screen and (min-width:768px)
 {
     #playstation-plus #nascosto{
@@ -39,4 +107,16 @@ section {
     #playstation-now #nascosto{
         display: inline-block;
     }
+}
+
+@media screen and (min-width:1200px)
+{
+    #logo-nav #nascosto{
+        display:inline-block;
+    }
+
+    #logo-nav #icona-nascosta{
+        display: none;
+    }
+
 }
