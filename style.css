@@ -30,6 +30,10 @@ section {
     color: #727272;
 }
 
+.btn-orange{
+    background-color: #cd3d0f;
+}
+
 .pd-top-100{
     padding-top:100px;
 }
@@ -76,20 +80,12 @@ section {
 }
 /****************sez-jumbotron***************/
 #jumbotron{
-    position:relative;  /*gli do l'ancoraggio*/
-}
-
-#jumbotron .container-fluid{   /*per posizionare titolo,paragrafo e button in quella determinata posizione sulla immagine*/
-    position:absolute;
-    bottom:10%;
+    background-image: url(img/jumbo-bg.png);
+    padding-top:15%; 
 }
 
 #jumbotron img{
-    width:100%; /*gli dico di occupare in larghezza il 100% del suo contenitore*/
-}
-
-#jumbotron button{
-    background-color: #cd3d0f;
+    width:100%;
 }
 /*************sez-returnal-ratchet***********/
 #returnal-ratchet img{
@@ -103,6 +99,27 @@ section {
 
 #playstation-plus #nascosto{
     display:none;
+}
+/************sez-it-takes-two****************/
+#it-takes-two{
+    background-image: url(img/it-takes-two-hero-banner-desktop.jpg);
+    padding-top:10%;
+}
+
+#it-takes-two-logo img{
+    width:100%;
+}
+/************sez-nuove-uscite***************/
+#nuove-uscite{
+    background-color: #1f1f1f;
+}
+/************sez-skater-crash***************/
+#skater-crash{
+    background-color:#1f1f1f; ;
+}
+
+#skater-crash img{
+    width:100%;
 }
 /************sez-playstation-now************/
 #playstation-now #nascosto{
