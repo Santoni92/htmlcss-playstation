@@ -26,6 +26,10 @@ section {
     padding:0px 20px;
 }
 
+.sa-btn-light{
+    background-color: #d9dadc;
+}
+
 .bg-gray{
     color: #727272;
 }
@@ -36,6 +40,10 @@ section {
 
 .pd-top-100{
     padding-top:100px;
+}
+
+.w-100{
+    width:100%;
 }
 /**********************************************content************************************************/
 /********************header******************/
@@ -83,32 +91,24 @@ section {
     background-image: url(img/jumbo-bg.png);
     padding-top:15%; 
 }
-
-#jumbotron img{
-    width:100%;
-}
 /*************sez-returnal-ratchet***********/
-#returnal-ratchet img{
-    width:100%;
-}
-/************sez-console-playstation*********/
-#console-playstation img{
-    width:100%;
-}
-/************sez-playstation-plus************/
 
-#playstation-plus #nascosto{
-    display:none;
-}
+/************sez-console-playstation*********/
+
 /************sez-it-takes-two****************/
 #it-takes-two{
     background-image: url(img/it-takes-two-hero-banner-desktop.jpg);
     padding-top:10%;
 }
 
-#it-takes-two-logo img{
-    width:100%;
+/************sez-playstation-plus************/
+#playstation-plus{
+    background-color: #bebcbb;
 }
+#playstation-plus #nascosto{
+    display:none;
+}
+
 /************sez-nuove-uscite***************/
 #nuove-uscite{
     background-color: #1f1f1f;
@@ -121,6 +121,7 @@ section {
 #skater-crash img{
     width:100%;
 }
+/*sez-*/
 /************sez-playstation-now************/
 #playstation-now #nascosto{
     display: none;
