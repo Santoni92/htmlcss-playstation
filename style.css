@@ -25,6 +25,14 @@ section {
     border-radius:50px;
     padding:0px 20px;
 }
+
+.bg-gray{
+    color: #727272;
+}
+
+.pd-top-100{
+    padding-top:100px;
+}
 /**********************************************content************************************************/
 /********************header******************/
 #brand-name{
@@ -67,21 +75,29 @@ section {
     display: inline-block;
 }
 /****************sez-jumbotron***************/
-#jumbotron .row{
+#jumbotron{
     position:relative;  /*gli do l'ancoraggio*/
 }
 
-.content{   /*per posizionare titolo,paragrafo e button in quella determinata posizione sulla immagine*/
+#jumbotron .container-fluid{   /*per posizionare titolo,paragrafo e button in quella determinata posizione sulla immagine*/
     position:absolute;
-    bottom:185px;
+    bottom:10%;
 }
 
 #jumbotron img{
     width:100%; /*gli dico di occupare in larghezza il 100% del suo contenitore*/
 }
 
-#jumbotron .content .col-12{
-    padding-left:30px;  /*sposto nella posizione voluta il titolo, paragrafo ed button*/
+#jumbotron button{
+    background-color: #cd3d0f;
+}
+/*************sez-returnal-ratchet***********/
+#returnal-ratchet img{
+    width:100%;
+}
+/************sez-console-playstation*********/
+#console-playstation img{
+    width:100%;
 }
 /************sez-playstation-plus************/
 
