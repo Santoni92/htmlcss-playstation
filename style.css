@@ -45,6 +45,16 @@ section {
 .w-100{
     width:100%;
 }
+.w-100-px{
+    width:100px;
+}
+.w-10-px{
+    width:30px;
+}
+
+.w-50-px{
+    width:150px;
+}
 /**********************************************content************************************************/
 /********************header******************/
 #brand-name{
@@ -100,7 +110,6 @@ section {
     background-image: url(img/it-takes-two-hero-banner-desktop.jpg);
     padding-top:10%;
 }
-
 /************sez-playstation-plus************/
 #playstation-plus{
     background-color: #bebcbb;
@@ -121,13 +130,22 @@ section {
 #skater-crash img{
     width:100%;
 }
-/*sez-*/
 /************sez-playstation-now************/
+#playstation-now{
+    background-color: #161c3b;
+}
+
+#playstation-now{
+    padding:100px 0px;
+}
+
 #playstation-now #nascosto{
     display: none;
 }
-
-
+/******************footer*****************/
+footer{
+    background-color: #00439c;
+}
 footer ul {
     list-style-type: none;
 }
