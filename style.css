@@ -44,7 +44,7 @@ section {
     padding-top:100px;
 }
 
-.w-100{
+.sa-w-100{
     width:100%;
 }
 .w-100-px{
@@ -135,6 +135,8 @@ header{
 /****************sez-jumbotron***************/
 #jumbotron{
     background-image: url(img/jumbo-bg.png);
+    background-position: center;
+    background-size: cover;
     padding-top:50px; 
     padding-bottom:196px;
 }
@@ -198,27 +200,4 @@ footer{
 }
 footer ul {
     list-style-type: none;
-}
-/*media query*/
-@media screen and (min-width:768px)
-{
-    #playstation-plus #nascosto{
-        display:inline-block;
-    }
-
-    #playstation-now #nascosto{
-        display: inline-block;
-    }
-}
-
-@media screen and (min-width:1200px)
-{
-    #logo-nav #nascosto{
-        display:inline-block;
-    }
-
-    #logo-nav #icona-nascosta{
-        display: none;
-    }
-
 }
