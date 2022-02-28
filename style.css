@@ -159,6 +159,11 @@ header{
     display:none;
 }
 
+#playstation-plus #nascosto img{
+    max-width:100%;
+    height:auto;
+}
+
 /************sez-nuove-uscite***************/
 #nuove-uscite{
     background-color: #1f1f1f;
@@ -166,6 +171,10 @@ header{
 /************sez-skater-crash***************/
 #skater-crash{
     background-color:#1f1f1f; ;
+}
+/************sez-esplora-playstation********/
+#wrapper{
+    min-height:80px;
 }
 /************sez-playstation-now************/
 #playstation-now{
