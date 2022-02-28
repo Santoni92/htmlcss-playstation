@@ -5,15 +5,17 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior: smooth;    /*per spostarsi in maniera fluida attraverso le sezioni e non di scatto*/
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-
 /**********************************************utilities********************************************/
-
 header,
 section {
-    min-height: 200px;
+    /*min-height: 200px;*/
 }
 
 [class*="col"]
@@ -52,14 +54,33 @@ section {
     width:30px;
 }
 
-.w-50-px{
+.w-150-px{
     width:150px;
 }
+
+button:hover{
+    transform: scale(1.2);
+}
 /**********************************************content************************************************/
+/*********************main*******************/
+main{
+    padding-top:120px;/*per evitare che l'header posto fixed non nasconda parte del jumbotron*/
+}
 /********************header******************/
+header{
+    position: fixed;/*l'elemento header con proprietà position settata ad fixed (position:fixed;) diventa automaticamento
+                      un elemento di tipo inline-block(cioè larghezza ed altezza si adattano al contenuto però posso dargli delle dimensioni).
+                      Allora per evitare che l'header collassi sul contenuto invece che occupare l'intera larghezza della pagina setto width:100%*/
+    width:100%;
+    z-index: 3;/*così facendo quando il testo passa attraverso l'header quest'ultimo non viene oscurato(nascosto)*/
+}
 #brand-name{
     background-color: #000000;
     color:white;
+}
+
+#logo-nav{
+    background-color: white;
 }
 
 .fa-solid{
@@ -99,10 +120,19 @@ section {
 /****************sez-jumbotron***************/
 #jumbotron{
     background-image: url(img/jumbo-bg.png);
-    padding-top:15%; 
+    padding-top:50px; 
+    padding-bottom:196px;
 }
 /*************sez-returnal-ratchet***********/
-
+#returnal-ratchet img:active{
+    animation-name: animazione;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes animazione{
+    from{transform: scale(1.2);}
+    to{transform: scale(1.2);}
+}
 /************sez-console-playstation*********/
 
 /************sez-it-takes-two****************/
@@ -125,10 +155,6 @@ section {
 /************sez-skater-crash***************/
 #skater-crash{
     background-color:#1f1f1f; ;
-}
-
-#skater-crash img{
-    width:100%;
 }
 /************sez-playstation-now************/
 #playstation-now{

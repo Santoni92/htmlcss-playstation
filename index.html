@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Playstation</title>
 </head>
-<body>
+<body id="body">
     <!--header-->
     <header>
         <div id="brand-name">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col d-flex justify-content-end">
-                        sony
+                    <div class="col d-flex justify-content-end pb-3 pt-3">
+                        <img class="w-100-px" src="img/sony_logo.svg" alt="sony-logo">
                     </div>
                 </div>
             </div>
@@ -28,9 +28,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col d-flex justify-content-between col-xl-1">
-                            <img src="img/play_logo.svg" alt="logo">
+                            <a href="#body"><img src="img/play_logo.svg" alt="play-logo"></a>   <!--creo il collegamento
+                                                                                                  all'inizio della pagina html,in questo modo anche se sono nelle altre sezioni,cliccando sul logo della playstation riesco a ritornare alla parte top della pagina-->
                             <i class="fa-solid fa-bars" id="icona-nascosta"></i>
-                     </div>       
+                    </div>       
                         
                         <!--link di navigazione compaiono bene in vista dalla risoluzione xl in poi-->
                         <div class="col" id="nascosto">
@@ -48,7 +49,7 @@
                                                       <li><a class="dropdown-item" href="#">Another action</a></li>
                                                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                                                     </ul>
-                                                  </div>
+                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="dropdown">
@@ -168,7 +169,7 @@
                     <div class="col-6 col-sm-4 col-xl-2"><img src="img/returnal-listing-thumb-01-ps5.jpg" alt="returnal" class="rounded-3  w-100"></div>
                     <div class="col-6 col-sm-4 col-xl-2"><img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="ratchet" class="rounded-3  w-100"></div>
                     <div class="col-6 col-sm-4 col-xl-2"><img src="img/returnal-listing-thumb-01-ps5.jpg" alt="returnal" class="rounded-3  w-100"></div>
-                    <div class="col-6 col-sm-4 col-xl-2"><img src="img/returnal-listing-thumb-01-ps5.jpg" alt="ratchet" class="rounded-3  w-100"></div>
+                    <div class="col-6 col-sm-4 col-xl-2"><img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="ratchet" class="rounded-3  w-100"></div>
                 </div>
             </div>
         </section>
@@ -186,29 +187,35 @@
         <section id="console-playstation">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="row pd-top-100">
-                            <div class="col-12 text-center"><h1 class="fw-bold">Console Playstation 5</h1></div>
-                            <div class="col-12 bg-gray"><p>Sperimenta la nuova generazione di incredibili giochi PlayStation</p> </div>
-                            <div class="col-12"><button type="button" class="btn btn-primary px-20 py-2 fw-bold">Maggiori informazioni</button></div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6"><img src="img/playstation-5-thumb.png" alt="play-thumb" class="w-100"></div>
-                    <div class="col-12 col-md-6">
+                    <div class=" col-12">
                         <div class="row">
-                            <div class="col-4"><img src="img/playstation-5-thumb.png" alt="play-thumb" class="w-100"></div>
-                            <div class="col-4"><img src="img/joypad-thumb.png" alt="joypad-thumb" class="w-100"></div>
-                            <div class="col-4"><img src="img/headset-thumb.png" alt="headset-thumb" class="w-100"></div>
+                            <div class="col-12 col-md-6">
+                                <div class="row pd-top-100">
+                                    <div class="col-12 text-center"><h1 class="fw-bold">Console Playstation 5</h1></div>
+                                    <div class="col-12 bg-gray"><p>Sperimenta la nuova generazione di incredibili giochi PlayStation</p> </div>
+                                    <div class="col-12"><button type="button" class="btn btn-primary px-20 py-2 fw-bold">Maggiori informazioni</button></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6"><img src="img/playstation-5-thumb.png" alt="play-thumb" class="w-100"></div>
                         </div>
+                        
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="row">
-                            <div class="col-6"><img src="img/remote-thumb.png" alt="remote-thumb" class="w-100"> </div>
-                            <div class="col-6"><img src="img/camera-thumb.jpg" alt="camera-thumb" class="w-100"> </div>
+                   
+                        <div class="col-12 col-md-6 d-flex align-items-center">
+                            <div class="row">
+                                <div class="col-4"><img src="img/playstation-5-thumb.png" alt="play-thumb" class="w-100"></div>
+                                <div class="col-4"><img src="img/joypad-thumb.png" alt="joypad-thumb" class="w-100"></div>
+                                <div class="col-4"><img src="img/headset-thumb.png" alt="headset-thumb" class="w-100"></div>
+                            </div>
                         </div>
-                    </div>
+                        <div class="col-12 col-md-6 d-flex align-items-center">
+                            <div class="row">
+                                <div class="col-6"><img src="img/remote-thumb.png" alt="remote-thumb" class="w-100"> </div>
+                                <div class="col-6"><img src="img/camera-thumb.jpg" alt="camera-thumb" class="w-100"> </div>
+                            </div>
+                        </div>
                 </div>
-            </div>
+             </div>
         </section>
 
         <section id="it-takes-two">
@@ -304,7 +311,7 @@
                             <div class="col-12"><img src="img/double11-202010-tw-psvr.jpg" alt="double11" class="w-100"></div>
                             <div class="col-12"><h1>PlayStation VR</h1></div>
                             <div class="col-12"><p class="bg-gray">Oltre 500 titoli ed esperienzedi gioco. Scoprili tutti.</p></div>
-                            <div class="col-12"><button type="button" class="btn btn-primary px-20 py-2 fw-bold">Scopri di più</button></div>
+                            <div class="col-12 d-flex align-items-end"><button type="button" class="btn btn-primary px-20 py-2 fw-bold">Scopri di più</button></div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
@@ -426,7 +433,7 @@
                         </div>
                     </div>
                 
-                <div class="col-12"><img class="w-50-px" src="img/sie-logo.svg" alt=""> </div>
+                <div class="col-12"><img class="w-150-px" src="img/sie-logo.svg" alt=""> </div>
                 <div class="col-12 text-white">
                     <p>Website 2021 Sony Interactive Entertainment Europe Limited. Tutti i contenuti, nomi dei giochi, nomi
                     commerciali e/o di abbigliamento, marchi registrati, grafica e immagini associati sono marchi
