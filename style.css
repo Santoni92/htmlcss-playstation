@@ -124,9 +124,13 @@ header{
 
 .dropdown-menu{
     position: absolute;
-    top:100%;
+    top:80%;
     left:0;
     width:100%;
+}
+
+.dropdown-menu img:hover, .dropdown-menu a:hover{
+    transform: scale(1.2);
 }
 /****************sez-jumbotron***************/
 #jumbotron{
